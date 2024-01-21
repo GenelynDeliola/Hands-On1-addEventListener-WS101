@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        body {
+            background-color: #FAF8F6;
+            text-align: center;
+            
+        }
+        h1 {
+            background-color: #38422B;
+            color: white;
+            font-weight: bold;
+            border: 5px;
+            border-radius: 100px;
+        }
+        button {
+            height: 40px;
+            width: 100px;
+            background-color: #38422B;
+            color: white;
+            font-weight: bold;
+            border-radius: 60px;
+        }
+        button:hover {
+            background-color: #94AF9F;
+        }
+           
+    </style>
+</head>
+<body>
+    <h1>JavaScript addEventListener() Hands-On.</h1>
+        <button id="b1">Button 1</button>
+        <button id="b2">Button 2</button>
+        <button id="b3">Button 3</button>
+        
+    <script>
+        document.getElementById("b1").addEventListener("click", b1);
+        document.getElementById("b2").addEventListener("click", b2);
+        document.getElementById("b3").addEventListener("click", b3);
+        
+        function b1() {
+            alert("Button 1 was clicked!");
+        }
+        function b2() {
+            alert("Button 2 was clicked!");
+        }
+        function b3() {
+            alert("Button 3 was clicked!");
+        }
+    </script>
+    
+</body>
+</html>
